@@ -27,7 +27,7 @@ public class Retrieve {
 	    // In order to do so I have to specify an identifier for the table,
 	    // in this case "j"
 	    PreparedStatement stmt = dbConn.
-	        prepareStatement("SELECT j.DOC.catchmentName,j.DOC.dateOpened FROM JSON j");
+	        prepareStatement("SELECT j.DOC.dateTime,j.DOC.value FROM JSON j");
 	    // Run the query
 	    ResultSet result = stmt.executeQuery();
 
